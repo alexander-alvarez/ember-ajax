@@ -26,6 +26,10 @@ describe('Unit | Utility | url helpers', function() {
       expect(isFullURL('http://google.com/test')).to.be.ok;
     });
 
+    it('recognizes blob URLs', function() {
+      expect(isFullURL('blob://someblobURL')).to.be.ok;
+    });
+    
     it('does not recognize a URL without a protocol', function() {
       expect(isFullURL('google.com/test')).not.to.be.ok;
     });
