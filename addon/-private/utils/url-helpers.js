@@ -2,7 +2,7 @@
 
 import isFastBoot from 'ember-ajax/-private/utils/is-fastboot';
 
-const completeUrlRegex = /^(http|https)/;
+const completeUrlRegex = /^(http|https|blob)/;
 
 /*
  * Isomorphic URL parsing
